@@ -1,4 +1,16 @@
 pip install you-get//安装
-you-get  -i  https://www.bilibili.com/video/BV1qt41197ot?p=17//查看参数
+
 you-get  https://www.bilibili.com/video/BV1qt41197ot?p=17//下载单个视频
-you-get --playlist  https://www.bilibili.com/video/BV1qt41197ot?p=17//下载视频全集
+
+1.第一个参数是 -i , 作用是解析出该地址下的视频信息
+you-get -i https://v.qq.com/x/cover/34rg8ntemeszdm4/j0613bozdsx.html
+#you-get -i 视频的地址
+
+2.第二个参数是 -o , 作用是下载该视频(注意要加保存的地址)
+you-get -o D:/ https://v.qq.com/x/cover/34rg8ntemeszdm4/j0613bozdsx.html
+#格式为you-get -o 要保存的地址 包含视频的网页url
+
+3.如果希望下载不同的的画质,先用-i参数得到解析出来的视频信息
+然后选择不同格式下载即可,具体代码如下:
+you-get --format == mp4hd -o D:/ http://v.youku.com/v_show/id_XMzYzMDI2MjUxMg==.html?spm=a2hww.20027244.m_250036.5~5!2~5~5!2~5~5~A&f=51755641
+#格式:you-get --format == container path url
