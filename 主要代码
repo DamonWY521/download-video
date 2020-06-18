@@ -1,1 +1,4 @@
-
+pip install you-get//安装
+you-get  -i  https://www.bilibili.com/video/BV1qt41197ot?p=17//查看参数
+you-get  https://www.bilibili.com/video/BV1qt41197ot?p=17//下载单个视频
+you-get --playlist  https://www.bilibili.com/video/BV1qt41197ot?p=17//下载视频全集
